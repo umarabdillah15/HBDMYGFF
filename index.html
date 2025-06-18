@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Niya 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Indie Flower', cursive;
+      background: pink;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 2px 2px #ff69b4;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: #fff;
+      max-width: 600px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Happy Birthday Niya! 🎂</h1>
+  <p>allooooww sayangkuu... harii inii kamuu sudaah dewasa semoga diberikan umur yang panjang yaa karenaa hari hari ku gabisa tanpa kamu sayang eakk, makin cantii, makin lucuuw, makin sayang sama maree makin semangat dalam menjalankan harihari baru. im heree always besaid you 💖</p>
+  <button onclick="startConfetti()">Click for surprise!</button>
+
+  <div class="gallery">
+    <img src="img/foto1.jpeg" alt="Memory 1"><p>ini moment paling canggung mare saat jalan berdua sama kamu sayang,tapii sweaat bangett lovee yuu </p>
+    <img src="img/foto2.jpeg" alt="Memory 2"><p>kalau ini seruu bangett sumpiss kek kepantaii naik kapal aaaa soon ke mekkah madinah bareng kamu deh sayangg</p>
+    <img src="img/foto3.jpeg" alt="Memory 3"><p>iniiiii wkkwkwkw lucuu bangett wishlist maree photobooth barengg kamuu terlunaskan hihiihhi our second chance</p>
+    <img src="img/foto4.jpeg" alt="Memory 4"><p>iniii aaaa asikk bangettt kek kitaa udaa sling terbukaa sama sama asik and pelukk kamuu and sksksk kiss your forehead make mee salting banget</p>
+  </div>
+  
+  <p>semogaaaaa<br> kamu ditahun tahun kedepannya di permudah urusannya, sukses terus, selalu jadi yang terbaik, <br>and janga lupa mare selalu ingin tumbuh dan berkembang bersamamu sayaangg sehat sehat terus yaaww.. i love youu so uch sayaangkuu</p>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    function startConfetti() {
+      confetti({
+        particleCount: 200,
+        spread: 100,
+        origin: { y: 0.6 }
+      });
+    }
+  </script>
+
+</body>
+</html>
